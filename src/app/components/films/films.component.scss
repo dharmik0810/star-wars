@@ -1,0 +1,51 @@
+@import '../../styles/fonts';
+@import '../../styles/colors';
+@import '../../styles/breakpoints';
+
+.films {
+  @include font(16px, $black, 400, 18px);
+  margin-top: 20px;
+
+  &__label {
+    @include font(18px, $black, 400, 20px);
+    margin-bottom: 10px;
+  }
+
+  &__table {
+    table {
+      width: 100%;
+
+      th {
+        @include font(16px, $green, 400, 18px);
+      }
+
+      tr,
+      td {
+        @include font(16px, $black, 400, 18px);
+      }
+    }
+  }
+}
+
+@include sm() {
+  .films {
+    @include font(14px, $black, 400, 16px);
+
+    &__label {
+      @include font(16px, $black, 400, 18px);
+    }
+
+    &__table {
+      table {
+        th {
+          @include font(14px, $green, 400, 16px);
+        }
+
+        tr,
+        td {
+          @include font(14px, $black, 400, 16px);
+        }
+      }
+    }
+  }
+}
