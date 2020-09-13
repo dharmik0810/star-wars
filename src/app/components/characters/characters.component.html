@@ -1,0 +1,13 @@
+<div class="characters">
+  <div class="characters__label">{{ label }}</div>
+  <div class="characters__container">
+    <div
+      *ngFor="let character of characters; let i = index"
+      class="characters__card characters__card--{{ character.name }}"
+      [ngClass]="{ 'characters__card--checked': character.selected }"
+      (click)="onChange(character)"
+    >
+      <div class="characters__description">{{ character.name }}</div>
+    </div>
+  </div>
+</div>
