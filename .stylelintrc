@@ -1,0 +1,30 @@
+{
+  "extends": [
+    "stylelint-config-standard"
+  ],
+  "plugins": [
+    "stylelint-scss"
+  ],
+  "rules": {
+    "at-rule-blacklist": ["debug"],
+    "at-rule-no-unknown": null,
+    "block-no-empty": null,
+    "declaration-empty-line-before": "never",
+    "comment-empty-line-before": [
+      "always",
+      {
+        "ignore": ["stylelint-commands", "after-comment"]
+      }
+    ],
+    "max-empty-lines": 2,
+    "no-invalid-double-slash-comments": true,
+    "selector-type-no-unknown": [true, {
+      "ignoreTypes": ["mat-tooltip-component"]
+    }],
+    "selector-pseudo-element-no-unknown": [true, {
+      "ignorePseudoElements": ["ng-deep"]
+    }],
+    "scss/at-rule-no-unknown": null,
+    "no-descending-specificity": null
+  }
+}
