@@ -1,0 +1,11 @@
+@import '../app/styles/fonts';
+@import '../app/styles/colors';
+
+.app {
+  max-width: 1180px;
+  margin: 20px auto;
+
+  &__error {
+    @include font(16px, $red, 400, 18px);
+  }
+}
